@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superhero Hunter</title>
+    <!-- Page icon -->
+    <link rel="icon" type="image/x-icon" href="/image/logo.png">
+
+    <!-- BOOTSTRAP CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- FONTAWSOME CDN -->
+    <script src="https://kit.fontawesome.com/14097a442a.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <!-- Navigation bar container fluid -->
+        <div class="container-fluid">
+            <!-- Navigation bar heading -->
+            <a class="navbar-brand" href="#">
+                <img src="/image/logo.png" alt="" width="40" height="34">
+                Superhero Hunter
+            </a>
+
+            <!-- Navigation bar toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation bar menu -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <button type="button"
+                            class="btn border border-2 rounded-3 border-dark position-relative px-2 py-1"
+                            data-bs-toggle="offcanvas" data-bs-target="#favourite" aria-controls="favourite"><i
+                                id="favourite-button" class="fa-regular fa-heart text-danger fs-5"></i>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                                <span class="visually-hidden">New alerts</span>
+                            </span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search box code -->
+    <div class="container my-4 px-md-5">
+        <!-- Input group -->
+        <div class="input-group w-auto mb-3 mx-auto mx-md-5">
+            <!-- Input feild -->
+            <input type="text" class="form-control rounded-pill fs-5" id="searchBox"
+                style="border-top-left-radius: 20px;" placeholder="Enter something which you want to search" onkeyup="handleInput()">
+        </div>
+    </div>
+
+    <!-- Superhero Card -->
+    <div class="container">
+        <div id="cardAppend" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3 mb-4">
+
+        </div>
+    </div>
+
+    <!-- Favourite Sidebar -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="favourite" aria-labelledby="favouriteContainer">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="favouriteContainer">Favourite</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="favourite-card-design" class="row row-cols-1">
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- BOOTSTRAP SCRIPT CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Script File -->
+    <script src="Script.js"></script>
+
+</body>
+
+</html>

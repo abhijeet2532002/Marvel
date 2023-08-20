@@ -1,5 +1,5 @@
 // split URL into two parts
-let startUrl = 'http://gateway.marvel.com/v1/public/characters';
+let startUrl = 'https://marvel-api-project-coding-ninja.netlify.app/v1/public/characters';
 let endUrl = '?&ts=1691554560791&apikey=0b0f563536c3a57a750d7aa1bb0dab54&hash=f3171302c1c54f0268f00e08fdd14c0f&limit=100';
 
 // Search bor (Input feild) varialble
